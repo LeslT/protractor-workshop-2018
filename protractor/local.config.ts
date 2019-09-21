@@ -1,4 +1,3 @@
-import { reporter } from './helpers/reporter';
 import { Config, browser } from 'protractor';
 
 export const config: Config = {
@@ -7,7 +6,6 @@ export const config: Config = {
   seleniumAddress: 'http://localhost:4444/wd/hub',
   onPrepare: () => {
     browser.ignoreSynchronization = true;
-    reporter();
   }
 };
 
